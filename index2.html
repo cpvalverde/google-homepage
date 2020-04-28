@@ -2,20 +2,99 @@
 <html>
     <head>
         <style>
+            body {
+                font-family: arial, sans-serif;
+            }
+            header ul {
+                list-style-type: none;
+                margin: 15px auto;
+                padding: 0;
+                overflow: hidden;
+                background-color: none;
+
+            }
+            #top-menu li {
+                float: left;
+            }
+            #top-menu a {
+                display: block;
+                color: #000;
+                opacity: 0.75;
+                font-size: 13px;
+                line-height: 24px;
+                text-align: center;
+                padding: 5px 0px 0px 15px;
+                text-decoration: none;
+            }
+            #top-menu a:hover {
+                text-decoration: underline;
+            }
+            #top-right li {
+                float:right;
+            }
+            #top-right a {
+                display: block;
+                color: #000;
+                opacity:1;
+                font-size: 13px;
+                text-align: center;
+                padding-left: 15px;
+                text-decoration: none;
+            }
+            #menu {
+                width:16px;
+                height: 16px;
+                display: grid;
+                margin:10px 15px 10px 18px;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap: 2px;
+            }
+            
+            .box {
+                background-color: #666;
+            }
+            #sign-in {
+                font-weight:500;
+                color: #fff;
+                background-color: #4285f4;
+                border-radius: 2px;
+                
+                border-width: 0px;
+                margin: 5px 15px 5px 5px;
+                padding: 0 12px 0 12px;
+                line-height: 28px;
+
+            }
+            
+            
+            
             
         </style>
     </head>
     <body>
         <header>
-            <ul id="top-left">
-               <li><a href="#">About</a></li>
-                <li><a href="#">Store</a></li>
-            </ul>
-            <ul id="top-right">
-                <li><a href="#">Gmail</a></li>
-                <li><a href="#">Images</a></li>
-                <li><div id="menu"></div></li>
+            <ul id="top-menu">
+               <li id="vertical-center"><a href="#">About</a></li>
+                <li id="vertical-center"><a href="#">Store</a></li>
+            
+                <!--Top right menu-->
+            <div id="top-right">  
                 <li><button id="sign-in">Sign in</button></li>
+                <li><div id="menu">
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                    <div class="box"></div>
+                </div></li>
+                <li id="vertical-center"><a href="#">Images</a></li>
+                <li id="vertical-center"><a href="#">Gmail</a></li>  
+            </div>
             </ul>
 
         </header>
