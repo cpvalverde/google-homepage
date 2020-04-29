@@ -125,7 +125,57 @@
             #idiomas {
                 text-align: center;
             }
-            
+            #idiomas a {
+                text-decoration: none;
+            }
+            #idiomas a:hover {
+                text-decoration: underline;
+            }
+            footer ul {
+                list-style-type: none;
+                margin: 0.5px auto;
+                padding: 0;
+                overflow: hidden;
+                background-color: #f2f2f2;
+            }
+            #bottom-menu li {
+                float: left;
+            }
+            #bottom-menu a {
+                display: block;
+                color: #5f6368;
+                font-size: 14px;
+                line-height: 40px;
+                text-align: center;
+                text-decoration: none;
+                padding: 5px 0px 0px 27px;
+            }
+            #bottom-menu a:hover {
+                text-decoration: underline;
+            }
+            #bottom-right li {
+                float: right;
+            }
+            #bottom-right #preferencias {
+                padding-right: 35px;
+
+            }
+            #country {
+                background-color: #f2f2f2;
+                line-height: 40px;
+                font-size: 15px;
+                padding-left: 27px;
+                color: rgba(0,0,0,.54);
+            }
+            footer {
+                position: absolute;
+                bottom: 0;
+                left: 0px;
+                right: 0px;
+                width: 100%;
+                background-color: #e4e4e4;
+            }
+
             
             
             
@@ -185,24 +235,20 @@
         </div>
         <footer>
             <div id="country"> Peru</div>
-            <div id="footer-links">
-                <ul id="bottom-left">
+
+                <ul id="bottom-menu">
                     <li><a href="#">Publicidad</a></li>
-                    &nbsp;&nbsp;
                     <li><a href="#">Negocios</a></li>
-                    &nbsp;&nbsp;
                     <li><a href="#">Sobre Google</a></li>
-                    &nbsp;&nbsp;
                     <li><a href="#">Cómo funciona la búsqueda</a></li>
-                </ul>
-                <ul id="bottom-right">
-                    <li><a href="#">Privacidad</a></li>
-                    &nbsp;&nbsp;
+                <!--Bottom right menu-->
+                <div id="bottom-right">
+                    <li id="preferencias"><a href="#">Preferencias</a></li>
                     <li><a href="#">Condiciones</a></li>
-                    &nbsp;&nbsp;
-                    <li><a href="#">Preferencias</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                </div>
                 </ul>
-            </div>
+            
         </footer>
 
     </body>
